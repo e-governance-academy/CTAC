@@ -1,0 +1,47 @@
+.h5p-joubelui-button {
+  background-color: $white;
+  color: $cprdark;
+  padding: 10px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .15s ease-in-out;
+
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: $purple;
+  }
+}
+
+.h5p-joubelui-button.qs-startbutton {
+  background-color: $purple;
+  color: $white;
+  padding: 15px 30px;
+
+  &:hover {
+    background-color: $white;
+    color: $cprdark;
+  }
+}
+
+.h5p-question-buttons {
+  padding-top: 20px;
+}
+
+.h5p-joubelui-button:before {
+  display: none;
+}
+
+.h5p-question .h5p-question-next {
+  width: auto;
+  padding: 10px 30px;
+}
+
+.h5p-question .h5p-question-next {
+  float: none;
+}

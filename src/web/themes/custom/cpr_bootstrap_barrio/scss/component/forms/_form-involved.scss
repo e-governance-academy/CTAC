@@ -1,0 +1,36 @@
+.node-be-involved-form {
+  padding-bottom: rem(80px);
+}
+
+.form-item-field-privacy-policy-value {
+  display: inline;
+
+  .form-check-input {
+    margin-left: 0;
+  }
+
+  .description {
+    display: inline;
+  }
+}
+
+.be-involved__privacy-policy--link {
+  font-size: rem(16px);
+  margin-left: rem(5px);
+}
+
+.node-be-involved-form {
+  .form-group {
+    padding: 0;
+  }
+}
+
+.block-help {
+  border: none;
+  padding: 0;
+}
+
+.node-be-involved-form .field--type-mailchimp-lists-subscription {
+  display: none;
+}
+

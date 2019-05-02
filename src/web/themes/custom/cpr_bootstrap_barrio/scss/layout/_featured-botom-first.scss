@@ -1,0 +1,19 @@
+.region-featured-bottom-first {
+  background-color: $cprgray;
+  padding-top: rem(80px);
+  padding-bottom: rem(32px);
+}
+
+.be-involved__featured .region-featured-bottom-first {
+  padding-bottom: rem(80px);
+}
+
+@include media-breakpoint-up(md) {
+  .region-featured-bottom-first {
+    padding-bottom: rem(80px);
+  }
+
+  .be-involved__featured .region-featured-bottom-first {
+    padding-bottom: rem(160px);
+  }
+}

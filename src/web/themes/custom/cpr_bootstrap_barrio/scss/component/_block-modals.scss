@@ -1,0 +1,176 @@
+.block--modal {
+  display: none;
+}
+
+.modal-content {
+  padding: rem(20px) rem(25px);
+
+  .block__title {
+    font-size: rem(32px);
+    margin-top: rem(40px);
+    word-break: break-word;
+  }
+}
+
+.modal-header,
+.modal-footer{
+  border: none;
+}
+
+.modal-header {
+  padding: 0;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.close {
+  opacity: 1;
+}
+
+.modal__close svg {
+  fill: $purple;
+  display: block;
+  width: rem(16px);
+}
+
+// Default drupal dialog, styles equal with themes modal
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: transparent;
+  border: none;
+  position: static;
+  width: auto;
+  margin: 0;
+  height: auto;
+
+  &:after {
+    padding: 0 rem(16px) rem(16px);
+    content: '\e901';
+    font-family: 'icomoon';
+    color: $purple;
+    font-size: 27px;
+    display: block;
+    text-indent: 0;
+  }
+
+  .ui-icon-closethick {
+    display: none;
+  }
+}
+
+.ui-widget-header {
+  background-color: $white;
+  border: none;
+}
+
+.ui-widget-content a {
+  color: $white;
+}
+
+.ui-dialog {
+  max-width: rem(800px) !important;
+
+  &.ui-widget-content {
+    border-radius: rem(8px);
+  }
+
+  .cpr-report-form {
+    padding-bottom: rem(40px);
+  }
+}
+
+.ui-dialog,
+.ui-dialog .ui-dialog-content {
+  padding: 0;
+}
+
+.report-form-fields,
+.report-form-community,
+.report-form__info--thanks {
+  padding: rem(20px);
+}
+
+.report-form-fields {
+  background-color: $cprgray;
+  display: flex;
+  flex-direction: column;
+
+  .form-group {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.report-form-fields .form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@include media-breakpoint-up(md) {
+  .modal-content {
+    .block__title {
+      font-size: rem(32px);
+      margin-top: rem(40px);
+      padding: 0 rem(75px);
+    }
+  }
+
+  .modal-body {
+    padding: rem(20px) rem(75px);
+
+    .content a {
+      color: $cprdark;
+
+      &:hover {
+        color: $cprdark;
+      }
+    }
+  }
+
+  .modal-footer {
+    padding: 0 rem(75px) rem(40px);
+  }
+
+
+  .report-form-fields,
+  .report-form-community,
+  .report-form__info--thanks {
+    padding: rem(20px) rem(100px);
+  }
+
+  .report-form-fields {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .form-item-name,
+    .form-item-surname {
+      width: calc(50% - 5px);
+    }
+
+    .form-item-name {
+      margin-right: rem(10px);
+    }
+  }
+}
+
+.ui-dialog input,
+.ui-dialog select,
+.ui-dialog textarea {
+  font-size: rem(16px);
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: 'rubik_mediumregular';
+}

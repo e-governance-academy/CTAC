@@ -1,0 +1,66 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * For edit form for Anonymous user
+ */
+function cpr_extension_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $current_user = \Drupal::currentUser();
+
+  if (($form_id == 'node_be_involved_form') && ($current_user->isAnonymous())) {
+    $form['#title'] = t('Be Involved');
+    unset($form['revision']);
+    unset($form['revision_log']);
+    unset($form['revision_information']);
+    unset($form['title']['widget'][0]['value']['#title']);
+    unset($form['field_e_mail']['widget'][0]['value']['#title']);
+    unset($form['field_telephone']['widget'][0]['value']['#title']);
+    unset($form['field_facebook_account']['widget'][0]['uri']['#title']);
+    unset($form['field_facebook_account']['widget'][0]['uri']['#description']);
+    $form['actions']['submit']['#value'] = t('Send');
+    $form['actions']['submit']['#attributes']['class'][] = 'btn--to-dark align-padding';
+
+    //    Set Placeholder for translation opportunity
+    $form['title']['widget'][0]['value']['#placeholder'] = t('Name');
+    $form['title']['#attributes']['class'][] = 'input--required';
+    $form['field_e_mail']['widget'][0]['value']['#placeholder'] = t('E-mail');
+    $form['field_e_mail']['#attributes']['class'][] = 'input--required';
+    $form['field_privacy_policy']['#attributes']['class'][] = 'input--required';
+    $form['field_telephone']['widget'][0]['value']['#placeholder'] = t('Phone');
+    $form['field_facebook_account']['widget'][0]['value']['#placeholder'] = t('Facebook account link');
+  }
+
+  if ($form_id == 'node_report_edit_form') {
+    $form['field_do_not_publish_the_report']['#disabled'] = 'disabled';
+  }
+
+  // Disable caching for webform, because anonymous user not see submissions counter
+  if (substr($form['#form_id'], 0, 18) == 'webform_submission') {
+    $form['#cache'] = ['max-age' => 0];
+  }
+}
+
+/**
+ * Implements hook_h5p_styles_alter().
+ */
+function cpr_extension_h5p_styles_alter(&$styles, $libraries, $mode) {
+  $styles[] = (object) array(
+    // Path relative to drupal root
+    'path' => drupal_get_path('module', 'cpr_extension') . '/libraries/css/style.css',
+  );
+}
+
+/**
+ * Implements hook_h5p_scripts_alter
+ */
+function cpr_extension_h5p_scripts_alter(&$scripts, $libraries, $mode) {
+  $scripts[] = (object) array(
+    'path' => drupal_get_path('module', 'cpr_extension') . '/libraries/js/jquery-3.3.1.min.js',
+  );
+  $scripts[] = (object) array(
+    'path' => drupal_get_path('module', 'cpr_extension') . '/libraries/js/cpr_h5p_scripts.js',
+  );
+}

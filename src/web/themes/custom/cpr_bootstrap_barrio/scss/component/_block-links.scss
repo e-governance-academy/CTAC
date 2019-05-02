@@ -1,0 +1,28 @@
+.block__links {
+  padding-top: rem(160px);
+  padding-bottom: rem(80px);
+  background-color: $cprdark;
+}
+
+.field--name-field-links {
+  flex-wrap: wrap;
+  .block-lincks__link--wrapper {
+    width: 100%;
+    margin-bottom: rem(15px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .field--name-field-links {
+    flex-wrap: nowrap;
+  }
+
+  .block-lincks__link--wrapper {
+    margin-right: rem(30px);
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

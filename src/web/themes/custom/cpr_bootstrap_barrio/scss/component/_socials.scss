@@ -1,0 +1,22 @@
+.socials-nav {
+  align-items: center;
+
+  .socials-nav__title {
+    color: $white;
+  }
+
+  .nav-link {
+    color: $white;
+    padding: rem(8px) 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nav-link {
+    margin-left: rem(15px);
+  }
+}

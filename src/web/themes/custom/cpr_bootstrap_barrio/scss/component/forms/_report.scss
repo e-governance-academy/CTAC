@@ -1,0 +1,94 @@
+.page-node-30 .layout-main-wrapper {
+  .main-content {
+    padding: 0;
+  }
+}
+
+.cpr-report-form {
+  padding-bottom: rem(60px);
+
+  .block__title {
+   padding: 0 rem(15px);
+  }
+
+  label {
+    display: none;
+  }
+
+  .form-item-do-not-publish {
+    display: block;
+
+    input {
+      margin-left: 0;
+    }
+  }
+
+  .form-managed-file {
+    position: relative;
+    overflow: hidden;
+
+    .form-file {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 75px;
+      cursor: pointer;
+      padding-top: rem(25px);
+    }
+
+    .btn-upload {
+      cursor: pointer;
+      display: inline-block;
+      color: $purple;
+    }
+
+    .file {
+      display: inline-block;
+      min-width: 100%;
+      margin-top: rem(15px);
+      margin-bottom: rem(10px);
+    }
+  }
+
+  .form-item-description {
+    margin-bottom: rem(20px);
+  }
+
+  .alert-wrapper {
+    z-index: 0;
+  }
+}
+
+.region-featured-content {
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: rem(15px);
+
+    .button {
+      order: 1;
+    }
+  }
+
+  .file--mime-image-jpeg {
+    min-width: 100%;
+  }
+
+  .btn-upload--info {
+    margin-left: rem(10px);
+    color: #989CA0;
+  }
+}
+
+.block--cunostiuncazdecoruptie {
+  padding-bottom: rem(80px);
+}
+
+@include media-breakpoint-up(md) {
+  .cpr-report-form {
+    padding-bottom: rem(80px);
+    padding-left: rem(15px);
+  }
+}

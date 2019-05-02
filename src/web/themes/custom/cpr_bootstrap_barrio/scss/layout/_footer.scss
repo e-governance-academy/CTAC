@@ -1,0 +1,24 @@
+.site-footer {
+  background-color: $white;
+}
+
+.site-footer__bottom .block {
+  margin: 0;
+}
+
+.site-footer__bottom {
+  margin-top: 0;
+
+  .region {
+    margin-top: 0;
+  }
+}
+
+.site-footer__top h2 {
+  color: $cprdark;
+}
+
+.site-footer .content {
+  color: $cprdark;
+  font-size: rem(16px);
+}

@@ -1,0 +1,16 @@
+html,
+body,
+.dialog-off-canvas-main-canvas,
+.page-wrapper,
+.page {
+  height: 100%;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+
+  .layout-main-wrapper {
+    flex-grow: 1;
+  }
+}

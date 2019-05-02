@@ -1,0 +1,51 @@
+$base-font-size: 16px;
+
+html {
+  font-size: $base-font-size;
+  overflow-x: hidden;
+}
+
+body,
+.ui-dialog,
+.header,
+.highlighted,
+.layout-main-wrapper,
+.featured-bottom,
+.site-footer,
+#page .ui-widget {
+  font-family: 'rubik_mediumregular';
+  font-weight: 500;
+}
+
+.bust-out {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  transform: translateX(calc(50vw - 50%));
+  width: 3840px;
+  max-width: 100vw;
+}
+
+.highlighted .alert-wrapper {
+  display: none;
+}
+
+.user-logged-in .highlighted .alert-wrapper {
+  display: block;
+}
+
+.align-padding {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@include media-breakpoint-up(md) {
+  .align-padding {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .align-padding-plus {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

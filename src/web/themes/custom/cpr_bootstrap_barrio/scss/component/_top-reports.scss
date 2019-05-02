@@ -1,0 +1,164 @@
+.block-views-blockreports-top-block-top-institutions {
+  padding-top: rem(30px);
+  padding-bottom: rem(50px);
+}
+
+.view-display-id-block_top_institutions,
+.view-display-id-reports_top_page {
+  padding-bottom: rem(80px);
+  display: flex;
+  flex-direction: column;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > .view-content {
+    display: none;
+  }
+}
+
+.view-display-id-top_reports_counter {
+  .view-header {
+    flex-grow: 1;
+    font-size: rem(80px);
+  }
+
+  .view-content {
+    display: none;
+  }
+
+  a {
+    color: $cprdark;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.top__reports--attachment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(30px);
+
+  a {
+    line-height: 1;
+  }
+
+  .view-content {
+    flex-grow: 1;
+    order: 2;
+  }
+
+  .view-footer {
+    color: $purple;
+    margin-top: rem(10px);
+    order: 1;
+    margin-bottom: rem(15px);
+  }
+}
+
+.view-reports-top .views-element-container {
+  min-width: 100%;
+  text-align: center;
+
+  h2 {
+    justify-content: center;
+  }
+
+  &:last-of-type {
+    .top__reports--attachment {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.top-reports--row {
+  margin-bottom: rem(10px);
+
+  .views-field-title-1 {
+    color: $purple;
+  }
+
+  .views-field {
+    display: inline;
+
+    .field-content {
+      display: inline;
+    }
+  }
+
+  .views-field-counter,
+  .views-field-field-institution {
+    padding: 0 rem(5px);
+  }
+
+  .views-field-name,
+  .views-field-field-institution {
+    color: $purple;
+  }
+}
+.view-display-id-block_top_institutions .top-reports--row {
+  .views-field-title,
+  .views-field-name {
+    a {
+      color: $cprdark;
+    }
+  }
+
+  .views-field-counter {
+    color: $cprdark;
+  }
+}
+
+.view-display-id-top_reports_counter {
+  align-items: center;
+}
+
+@include media-breakpoint-up(md) {
+  .view-reports-top .views-element-container {
+    min-width: auto;
+    text-align: left;
+
+    h2 {
+      justify-content: flex-start;
+    }
+  }
+
+  .block-views-blockreports-top-block-top-institutions {
+    padding-top: 0;
+    margin-top: rem(-20px);
+  }
+
+  .view-display-id-block_top_institutions {
+    flex-direction: row;
+  }
+
+  .view-display-id-top_reports_counter {
+    align-items: center;
+  }
+
+  .top__reports--attachment {
+    margin-bottom: 0;
+    height: 100%;
+
+    .view-content {
+      order: 1;
+    }
+
+    .view-footer {
+      order: 2;
+      margin-bottom: 0;
+    }
+  }
+
+  .top-reports--row {
+    padding-right: rem(15px);
+  }
+}

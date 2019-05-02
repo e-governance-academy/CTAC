@@ -1,0 +1,42 @@
+.h5p-multichoice .h5p-answer.h5p-correct .h5p-feedback-inner,
+.h5p-multichoice .h5p-answer.h5p-wrong .h5p-feedback-inner {
+  border: none;
+}
+
+.h5p-multichoice .h5p-answer.h5p-correct .h5p-feedback-inner {
+  background-color: rgba(56, 168, 120, .2);
+}
+
+.h5p-multichoice .h5p-answer.h5p-wrong .h5p-feedback-inner {
+  background-color: rgba(208, 32, 56, .2);
+}
+
+.h5p-multichoice .h5p-alternative-container {
+  text-indent: 0;
+}
+
+.h5p-multichoice .h5p-feedback-dialog {
+  position: relative;
+  left: 0;
+}
+
+.h5p-multichoice .h5p-feedback-inner:before {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: 0;
+  height: 0;
+  background: none;
+  transform: none;
+  box-shadow: none;
+  border-style: solid;
+  border-width: 20px 0 0 30px;
+}
+
+.h5p-multichoice .h5p-correct .h5p-feedback-inner:before {
+  border-color: transparent transparent transparent rgba(56, 168, 120, .2);
+}
+
+.h5p-multichoice .h5p-wrong .h5p-feedback-inner:before {
+  border-color: transparent transparent transparent rgba(208, 32, 56, .2);
+}
