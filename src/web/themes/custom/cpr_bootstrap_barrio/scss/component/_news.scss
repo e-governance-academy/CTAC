@@ -1,0 +1,37 @@
+.news__page-title {
+ text-align: center;
+ margin-bottom: rem(32px);
+}
+
+.news__date-created--wrapper {
+ text-align: center;
+ margin-bottom: 0;
+}
+
+.news__date-created {
+ color: #6F747F;
+ font-weight: 500;
+}
+
+.view-display-id-news_page,
+.view-display-id-research_page {
+  padding-bottom: rem(120px);
+
+  .card-block__row {
+    margin-bottom: rem(30px);
+  }
+}
+
+.full-node--padding-bottom {
+  padding-bottom: rem(160px);
+}
+
+.image-slider--wrapper {
+  width: 100%;
+  margin-top: rem(50px);
+}
+
+.slick-arrow::before {
+  color: $purple;
+  opacity: 1;
+}

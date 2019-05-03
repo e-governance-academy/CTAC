@@ -1,0 +1,41 @@
+.block--contacts {
+  background-color: $cprgray;
+  padding-top: rem(60px);
+  padding-bottom: rem(160px);
+
+  .field {
+    margin-bottom: rem(15px);
+  }
+
+  .field__label {
+    color: $purple;
+  }
+
+  .field__item,
+  .field__item a {
+    font-size: rem(20px);
+    color: $cprdark;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .block--contacts {
+    padding-bottom: rem(140px);
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .field {
+      margin-bottom: 0;
+    }
+  }
+
+  .path-node,
+  .path-reports {
+    .block--contacts {
+      background-color: $white;
+    }
+  }
+}

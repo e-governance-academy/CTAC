@@ -1,0 +1,107 @@
+.accordion {
+  border-radius: rem(8px);
+  margin-bottom: rem(15px);
+  background-color: $white;
+  padding: rem(15px) rem(20px);
+
+  .field--name-field-description {
+    color: $cprdark;
+  }
+}
+
+.rep-teser__title--wrapper {
+  flex-grow: 2;
+  min-width: rem(100px);
+}
+
+.rep-teaser__date,
+.rep-teaser__problem {
+  color: $purple;
+  font-size: rem(14px);
+}
+
+.rep-teaser__problem {
+  .field--name-field-problem-type .field__item {
+    display: inline-block;
+
+    a:after {
+      content: ', ';
+    }
+
+    &:last-of-type a:after {
+      content: ' ';
+    }
+  }
+}
+
+.rep-teaser__institution--wrapper {
+  flex-grow: 1;
+  margin-top: rem(10px);
+}
+
+.rep-teaser--institution {
+  a {
+    color: $cprdark;
+  }
+}
+
+.accordion__link--wrapper {
+  display: flex;
+  margin-top: rem(10px);
+  justify-content: center;
+}
+
+.accordion__link {
+  display: inline-block;
+}
+
+.accordion__accordion--icon {
+  background-color: $purple;
+  border-radius: rem(4px);
+  padding: rem(7px);
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+
+  svg {
+    display: block;
+    transition: 250ms;
+  }
+}
+
+.accordion__link--active .accordion__accordion--icon {
+  background-color: $cprdark;
+  svg {
+    transform: rotate(135deg);
+  }
+}
+
+.view-reports .accordion__body {
+  display: none;
+}
+
+.accordion__body {
+  border-top: 2px solid $cprgray;
+  padding-top: rem(15px);
+}
+
+@include media-breakpoint-up(md) {
+  .rep-teaser__institution--wrapper {
+    width: 70%;
+  }
+
+  .accordion__header {
+    display: flex;
+    align-items: center;
+  }
+
+  .rep-teaser__institution--wrapper {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .accordion__link--wrapper {
+    margin-top: 0;
+    margin-left: rem(20px);
+  }
+}

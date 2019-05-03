@@ -1,0 +1,24 @@
+.page-error {
+  background-color: $cprdark;
+  padding-top: rem(100px);
+  padding-bottom: rem(200px);
+  margin-top: rem(-95px);
+
+  .field--name-body {
+    color: $white;
+
+    h1 {
+      margin-bottom: rem(30px);
+    }
+  }
+}
+
+.page-error__svg-wrapper {
+  svg {
+    max-width: 100%;
+  }
+}
+
+.page-error__btn--back {
+  margin-top: rem(30px);
+}

@@ -1,0 +1,49 @@
+.header-container {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.scroll-progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: $cprdark;
+  position: absolute;
+}
+
+.scroll-progress {
+  width: 0;
+  height: 5px;
+  background-color: $purple;
+}
+
+.block--scrolltotop {
+  display: block;
+}
+
+.scroll-to-top {
+  display: block;
+  border-radius: 4px;
+  opacity: .5;
+  padding: 10px;
+  background-color: $purple;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+
+  svg {
+    display: block;
+    width: rem(24px);
+    height: rem(24px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .block--scrolltotop {
+    display: none;
+  }
+}

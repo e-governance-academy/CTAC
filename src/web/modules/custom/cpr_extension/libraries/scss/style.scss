@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'rubik_mediumregular';
+  src: url('../fonts/rubik/rubik-medium-webfont.eot');
+  src: url('../fonts/rubik/rubik-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/rubik/rubik-medium-webfont.woff2') format('woff2'),
+  url('../fonts/rubik/rubik-medium-webfont.woff') format('woff'),
+  url('../fonts/rubik/rubik-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$purple:  #E85868;
+$cprgray: #E4E6E8;
+$cprdark: #202838;
+$white:   #ffffff;
+
+.h5p-content {
+  background-color: $cprdark;
+  font-family: 'rubik_mediumregular';
+}
+
+.qs-footer,
+.h5p-question-finish,
+.h5p-multichoice-tipwrap,
+.h5p-multichoice .h5p-answer-icon,
+.h5p-question-prev.h5p-joubelui-button,
+.h5p-question-buttons.h5p-question-visible,
+.h5p-question-scorebar.h5p-question-visible,
+.h5p-multichoice .h5p-answer .h5p-alternative-container:before {
+  display: none;
+  margin: 0;
+}
+
+*,
+*:focus {
+  outline: 0;
+}
+
+.h5p-multichoice h2 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.h5p-multichoice h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@import "h5p-body";
+
+@import "intro";
+
+@import "question";
+
+@import "answer";
+
+@import "feedback";
+
+@import "buttons";
+
+@import "results";

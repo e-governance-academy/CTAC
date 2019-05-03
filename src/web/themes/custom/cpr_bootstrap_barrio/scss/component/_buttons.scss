@@ -1,0 +1,113 @@
+//  Rewrite Bootstrap buttons sizes
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: rem(16px);
+  padding: rem(15px) rem(30px);
+  line-height: 1;
+  border: none;
+}
+
+.btn-sm {
+  font-size: rem(16px);
+  padding: rem(12px) rem(20px);
+}
+
+.cpr-report-form .form-actions .form-submit {
+  font-size: rem(16px);
+  padding: rem(15px) rem(30px);
+}
+
+.btn.btn-lg {
+  font-size: rem(20px);
+  padding: rem(18px) rem(30px);
+}
+
+.btn.btn-lg {
+  min-width: 100%;
+}
+
+//  Rewrite Bootstrap buttons colors
+.btn-light {
+  color: $cprdark;
+
+  &:hover {
+    color: $white;
+    background-color: $cprdark;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    color: $white;
+    background-color: $cprdark;
+  }
+}
+
+a.btn-primary,
+.btn-primary {
+  color: $white;
+
+  &:hover {
+    color: $cprdark;
+    background-color: $white;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    color: $cprdark;
+    background-color: $white;
+  }
+}
+
+.button.button--primary {
+  background-image: none;
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+a.btn {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .btn.btn-lg {
+    min-width: rem(270px);
+  }
+}
+
+.btn.btn--to-red {
+  &:hover {
+    background-color: $purple;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: $purple;
+  }
+}
+
+.btn.btn--to-dark,
+.btn--to-dark{
+  &:hover {
+    background-color: $cprdark;
+    color: $white;
+  }
+}
+
+.link--black {
+  color: $cprdark;
+
+  &:hover {
+    color: $cprdark;
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .btn-sm {
+    padding: rem(10px) rem(20px);
+  }
+}

@@ -1,0 +1,20 @@
+.main-content {
+  padding-top: rem(20px);
+}
+
+.path-test-page {
+  background-color: $cprdark;
+
+  .block--jointhefightagainstcorruption,
+  .test-share--wrapper,
+  .block--webformconfirmationmessage {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .main-content {
+    padding-top: rem(80px);
+  }
+}
+

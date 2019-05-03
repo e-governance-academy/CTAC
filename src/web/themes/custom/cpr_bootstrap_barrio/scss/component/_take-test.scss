@@ -1,0 +1,62 @@
+.block--doyourecognizecorruption {
+  position: relative;
+}
+
+.block__take-the-test {
+  position: relative;
+
+  .field--type-link .field__item {
+    width: 100%;
+  }
+
+  .block__title {
+    text-align: center;
+    margin-bottom: rem(15px);
+  }
+}
+
+.take-test__wrapper--position {
+  padding-top: rem(20px);
+  padding-bottom: rem(20px);
+  background-color: $purple;
+  border-radius: rem(8px);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: calc(100% - 30px);
+}
+
+.take-test__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@include media-breakpoint-up(md) {
+  .take-test__wrapper--position {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+  }
+
+  .take-test__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .field--name-field-links {
+      margin-left: rem(10px);
+    }
+
+    .block__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .block__take-the-test {
+    .block__title {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+h1 {
+  font-size: rem(26px);
+  margin-bottom: rem(10px);
+}
+
+h2 {
+  font-size: rem(24px);
+}
+
+h3 {
+  font-size: rem(22px);
+}
+
+h4 {
+  font-size: rem(20px);
+}
+
+h5 {
+  font-size: rem(16px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+.title--bg--white {
+  margin-bottom: rem(15px);
+  padding: rem(10px) rem(20px);
+  display: inline-block;
+  line-height: 1;
+  color: $cprdark;
+  background-color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a {
+  color: $purple;
+  
+  &:hover {
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: rem(40px);
+    margin-bottom: rem(10px);
+  }
+
+  h2 {
+    font-size: rem(32px);
+  }
+
+  h3 {
+    font-size: rem(24px);
+  }
+
+  h4 {
+    font-size: rem(20px);
+  }
+
+  h5 {
+    font-size: rem(16px);
+  }
+}

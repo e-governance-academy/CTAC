@@ -1,0 +1,28 @@
+.path-reports {
+  .layout-main-wrapper {
+    background-color: $cprgray;
+    padding-bottom: rem(80px);
+  }
+
+  .view-footer {
+    margin-top: rem(15px);
+  }
+}
+
+.view-display-id-view_reports {
+  padding-top: rem(30px);
+
+  .views-infinite-scroll-content-wrapper {
+    width: 100%;
+  }
+
+  .feed-icons {
+    display: none;
+  }
+}
+
+.user-logged-in {
+  .feed-icons {
+    display: block;
+  }
+}

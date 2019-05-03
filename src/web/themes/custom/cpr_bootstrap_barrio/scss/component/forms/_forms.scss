@@ -1,0 +1,47 @@
+.form-control {
+  padding: rem(10px) rem(20px);
+
+  &::placeholder {
+    color: #989CA0;
+  }
+}
+
+.form-group {
+  margin-bottom: rem(10px);
+}
+
+.form-text {
+  margin-top: 0;
+}
+
+.input--required {
+  &:before {
+    content: '';
+    vertical-align: super;
+    display: inline-block;
+    background-image: url(../images/required.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 6px;
+    width: 6px;
+    height: 6px;
+    margin-left: rem(15px);
+    position: absolute;
+    top: rem(15px);
+    z-index: 1;
+  }
+}
+
+.field--widget-boolean-checkbox.input--required {
+  &:before {
+    top: rem(8px);
+    margin-left: rem(10px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .input--required {
+    &:before {
+      margin-left: rem(10px);
+    }
+  }
+}

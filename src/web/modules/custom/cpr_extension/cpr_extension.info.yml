@@ -1,0 +1,9 @@
+name: CPR  extension
+type: module
+description: Add functionality for CPR Anticoruption Platform
+package: Theming
+version: '8.x'
+core: '8.x'
+project: 'cpr_extension'
+dependencies:
+  - block

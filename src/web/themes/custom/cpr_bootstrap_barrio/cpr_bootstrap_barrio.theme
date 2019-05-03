@@ -1,0 +1,160 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+function get_current_language() {
+  return \Drupal::languageManager()->getCurrentLanguage()->getId();
+}
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ *
+ */
+function cpr_bootstrap_barrio_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+}
+
+/**
+ * Use language code for the language switcher
+ *
+ * @param $variables
+ */
+function cpr_bootstrap_barrio_preprocess_links__language_block(&$variables) {
+
+  foreach ($variables['links'] as $i => $link) {
+    /** @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage */
+    $linkLanguage = $link['link']['#options']['language'];
+    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+  }
+}
+
+/**
+ * Implements template_preprocess_block() for adding into block template variable
+ * with current Page title.
+ *
+ * @param $variables
+ */
+function cpr_bootstrap_barrio_preprocess_block(&$variables) {
+  $block_types = [
+    'block_title'
+  ];
+
+  if (isset($variables['elements']['content']['#block_content'])) {
+    $block_type = $variables['elements']['content']['#block_content']->bundle();
+    if (in_array($block_type, $block_types)) {
+      $title = '';
+      $request = \Drupal::request();
+      if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+        $title = \Drupal::service('title_resolver')->getTitle($request, $route);
+
+        // Change title for creation of new 'be_involved' content.
+        $current_url = \Drupal\Core\Url::fromRoute('<current>');
+        $url = $current_url->getInternalPath();
+        if ($url == 'node/add/be_involved') {
+          $title = t('Be Involved');
+        }
+      }
+      $variables['page_title_block'] = $title;
+    }
+  }
+
+  $variables['language'] = get_current_language();
+}
+
+/**
+ * Implements template_preprocess_views_view() for adding classes to block top reports attachments
+ *
+ * @param $variables
+ */
+
+function cpr_bootstrap_barrio_preprocess_views_view(&$variables) {
+  if ($variables['id'] == 'reports_top') {
+    foreach ($variables['attachment_after'] as &$item) {
+      if ($item['#display_id'] == 'top_institutions') {
+        $item['#attributes']['class'][] = 'col-md-4 offset-md-1';
+      }
+
+      if ($item['#display_id'] == 'top_problems') {
+        $item['#attributes']['class'][] = 'col-md-4';
+      }
+
+      if ($item['#display_id'] == 'top_reports_counter') {
+        $item['#attributes']['class'][] = 'col-md-2';
+      }
+    }
+  }
+
+  if ($variables['id'] == 'reports_top_reports_page') {
+    foreach ($variables['attachment_after'] as &$item) {
+      if ($item['#display_id'] == 'top_institutions') {
+        $item['#attributes']['class'][] = 'col-md-4 offset-md-1';
+      }
+
+      if ($item['#display_id'] == 'top_problems') {
+        $item['#attributes']['class'][] = 'col-md-6';
+      }
+    }
+  }
+
+  if (($variables['id'] == 'contributes') && ($variables['attachment_after'])){
+    foreach ($variables['attachment_after'] as &$item) {
+      if ($item['#display_id'] == 'attachment_partners') {
+        $item['#attributes']['class'][] = 'col-md-4 offset-md-1';
+        $partners_item = $item;
+      }
+
+      if ($item['#display_id'] == 'attachment_finantials') {
+        $item['#attributes']['class'][] = 'col-md-6';
+        $financials_item = $item;
+      }
+    }
+
+    $variables['attachment_after'] = [];
+    $variables['attachment_after'][] = $partners_item;
+    $variables['attachment_after'][] = $financials_item;
+  }
+}
+
+/**
+ * Implements template_preprocess_preprocess_node() for adding current language in path
+ *
+ * @param $variables
+ */
+
+function cpr_bootstrap_barrio_preprocess_node(&$vars) {
+  $vars['language'] = get_current_language();
+}
+
+/**
+ * Implements template_reprocess_taxonomy_term() for adding current language in path
+ *
+ * @param $variables
+ */
+
+function cpr_bootstrap_barrio_preprocess_taxonomy_term(&$vars) {
+  $vars['language'] = get_current_language();
+}

@@ -1,0 +1,44 @@
+.block--views-block__research-research-more-block {
+  margin-bottom: rem(30px);
+
+  .views-row {
+    width: 100%;
+  }
+}
+
+.block--more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: rem(30px);
+
+  h1 {
+    margin-bottom: rem(15px);
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .block--views-block__research-research-more-block {
+    margin-bottom: 0;
+  }
+
+  .block--more {
+    flex-wrap: nowrap;
+
+    h1 {
+      margin-bottom: 0;
+      width: auto;
+    }
+  }
+
+  .block--more__link {
+    margin-left: rem(15px);
+  }
+}
+
+.view-display-id-research_more_block {
+  .field--type-image img {
+    min-width: auto;
+  }
+}

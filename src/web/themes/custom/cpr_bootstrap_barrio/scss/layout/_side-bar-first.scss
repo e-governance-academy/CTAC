@@ -1,0 +1,44 @@
+.sidebar {
+  padding-top: rem(20px);
+
+  .block {
+    border: none;
+  }
+
+  .block--joinourgrowingcommunity {
+    padding-top: 0;
+  }
+}
+
+.sidebar h2.block__title {
+  font-size: rem(26px);
+  border: none;
+  letter-spacing: 0;
+  padding-bottom: 0;
+}
+
+.sidebar .block {
+  padding-top: rem(50px);
+  padding-right: 0;
+  padding-left: 0;
+
+  .content {
+    font-size: rem(16px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar {
+    padding-top: rem(80px);
+  }
+
+  .sidebar .block {
+    padding-top: 0;
+    padding-bottom: rem(80px);
+    padding-right: rem(30px);
+  }
+
+  .sidebar h2.block__title {
+    font-size: rem(40px);
+  }
+}

@@ -1,0 +1,60 @@
+.block-views-blockreports-top-reports-page-reports-top-page {
+  padding-top: rem(80px);
+  background-color: $cprdark;
+
+  .views-element-container {
+    min-width: 100%;
+  }
+
+  .view-content {
+    @extend .row;
+  }
+}
+
+.view-display-id-reports_top_page .top-reports--row {
+  .views-field-title,
+  .views-field-name {
+    a {
+      color: $white;
+    }
+  }
+
+  .views-field-counter {
+    color: $white;
+  }
+}
+
+.top__reports--page {
+  .view-content {
+    flex-direction: row;
+  }
+}
+
+.view-id-reports_top_reports_page.view-display-id-top_institutions {
+  height: auto;
+
+  .view-footer {
+    order: 2;
+  }
+}
+
+.top-reports-form--row {
+  flex-wrap: wrap;
+  margin-bottom: rem(40px);
+
+  .views-field-field-svg {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: rem(10px);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .block-views-blockreports-top-reports-page-reports-top-page {
+    padding-bottom: rem(30px);
+
+    .views-element-container {
+      min-width: auto;
+    }
+  }
+}

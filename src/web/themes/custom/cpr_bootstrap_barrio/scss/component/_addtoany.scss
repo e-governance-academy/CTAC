@@ -1,0 +1,24 @@
+.addtoany_list > .test__btn--share,
+.addtoany_list > a:not([href]):not([tabindex]){
+  @extend .btn;
+  @extend .btn-primary;
+
+  .a2a_s_facebook {
+    display: none;
+  }
+}
+
+.block-addtoany {
+  padding-bottom: rem(80px);
+}
+
+.addtoany_list.report-share {
+  display: inline-block;
+  margin-top: rem(15px);
+
+  .test__btn--share {
+    padding: rem(10px) rem(20px);
+
+    @extend .btn--to-dark;
+  }
+}

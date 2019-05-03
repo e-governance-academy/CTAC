@@ -1,0 +1,142 @@
+.navbar {
+ padding-top: rem(20px);
+ padding-bottom: rem(20px);
+}
+
+.header {
+  background-color: $cprdark;
+}
+
+.header--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo--wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  margin-right: rem(15px);
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+.navbar-collapse {
+  position: relative;
+  background-color: rgba(16, 24, 32, 0.25);
+  min-width: 100vw;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  transform: translateX(calc(50vw - 50%));
+  width: 3840px;
+  max-width: 100vw;
+}
+
+.mobile-menu--icon-opened {
+  position: absolute;
+  opacity: 0;
+  top: rem(4px);
+}
+
+.navbar-toggler {
+  border: none;
+  position: relative;
+  margin-left: auto;
+  padding: rem(5px);
+
+  .mobile-menu--icon {
+    transition: all linear .2s;
+    display: block;
+
+    svg {
+      fill: $white;
+      color: $white;
+      width: rem(30px);
+      height: 30px;
+    }
+  }
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  .mobile-menu--icon {
+    transform: rotate(90deg);
+  }
+
+  .mobile-menu--icon-closed {
+    opacity: 0;
+  }
+
+  .mobile-menu--icon-opened {
+    opacity: 1;
+  }
+}
+
+.navbar-toggler[aria-expanded="false"] {
+  .mobile-menu--icon {
+
+  }
+}
+
+.menu--header-socials {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials-nav {
+  width: 100%;
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+  flex-direction: column;
+}
+
+@include media-breakpoint-up(md) {
+  .menu--header-socials {
+    width: auto;
+  }
+
+  .socials-nav {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    position: static;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+  }
+
+  .header {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+  }
+
+  .header--menu {
+    flex-direction: row;
+  }
+  
+  .logo--wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: rem(40px);
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+    background-color: transparent;
+    min-width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transform: none;
+    width: auto;
+    max-width: none;
+  }
+}
