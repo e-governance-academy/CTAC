@@ -10,8 +10,8 @@ services:
       MYSQL_DATABASE: drupal
       MYSQL_USER: drupal
       MYSQL_PASSWORD: drupal
-#    volumes:
-#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+    volumes:
+      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
 #      - /path/to/mariadb/data/on/host:/var/lib/mysql # I want to manage volumes manually.
 
   php:
@@ -122,27 +122,27 @@ services:
 #     image: wodby/redis:3.2-2.1.3
 # ##    image: wodby/redis:4.0-2.1.3
 
-  adminer:
-    image: wodby/adminer:4
-    environment:
-      ADMINER_SALT: adminer-salt
-    labels:
-      - 'traefik.backend=adminer'
-      - 'traefik.port=9000'
-      - 'traefik.frontend.rule=Host:adminer.cpr.docker.localhost'
+  # adminer:
+  #   image: wodby/adminer:4
+  #   environment:
+  #     ADMINER_SALT: adminer-salt
+  #   labels:
+  #     - 'traefik.backend=adminer'
+  #     - 'traefik.port=9000'
+  #     - 'traefik.frontend.rule=Host:adminer.cpr.docker.localhost'
 
-#  pma:
-#    image: phpmyadmin/phpmyadmin
-#    environment:
-#      PMA_HOST: mariadb
-#      PMA_USER: drupal
-#      PMA_PASSWORD: drupal
-#      PHP_UPLOAD_MAX_FILESIZE: 1G
-#      PHP_MAX_INPUT_VARS: 1G
-#    labels:
-#      - 'traefik.backend=pma'
-#      - 'traefik.port=80'
-#      - 'traefik.frontend.rule=Host:pma.cpr.docker.localhost'
+  pma:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: drupal
+      PMA_PASSWORD: drupal
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+    labels:
+      - 'traefik.backend=pma'
+      - 'traefik.port=80'
+      - 'traefik.frontend.rule=Host:pma.cpr.docker.localhost'
 
 #  solr:
 ## wodby/drupal-solr:[DRUPAL_VERSION]-[SOLR_VERSION]-[STABILITY_TAG].

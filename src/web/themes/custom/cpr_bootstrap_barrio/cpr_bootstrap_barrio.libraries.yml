@@ -1,16 +1,12 @@
 global-styling:
   version: VERSION
   js:
-    js/datepicker.min.js: {}
-    js/datepicker.en.js: {}
-    js/datepicker.ro.js: {}
     js/jquery.waypoints.js: {}
     js/jquery.counterup.js: {}
-    js/global.js: {}
+    js/global.min.js: {}
   css:
     component:
       css/style.css: {}
-      css/datepicker.min.css: {}
 #      css/colors.css: {}
 bootstrap:
   js:
@@ -41,6 +37,12 @@ cpr-test-form:
     js/test-form.js: {}
 
 cpr-reports:
+  css:
+    theme:
+      css/datepicker.min.css: {}
   js:
+    js/datepicker.min.js: {}
+    js/datepicker.en.js: {}
+    js/datepicker.ro.js: {}
     js/reports.js: {}
 

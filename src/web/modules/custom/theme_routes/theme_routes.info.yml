@@ -1,0 +1,5 @@
+name: 'theme_routes'
+type: module
+description: 'Custom theme routes'
+core: 8.x
+package: Theming

@@ -1,5 +1,14 @@
-XSym
-0039
-4a6fe37a7d23ba6c02d7527633b7df87
-../squizlabs/php_codesniffer/bin/phpcbf
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+#!/usr/bin/env sh
+
+dir=$(cd "${0%[/\\]*}" > /dev/null; cd "../squizlabs/php_codesniffer/bin" && pwd)
+
+if [ -d /proc/cygdrive ]; then
+    case $(which php) in
+        $(readlink -n /proc/cygdrive)/*)
+            # We are in Cygwin using Windows php, so the path must be translated
+            dir=$(cygpath -m "$dir");
+            ;;
+    esac
+fi
+
+"${dir}/phpcbf" "$@"

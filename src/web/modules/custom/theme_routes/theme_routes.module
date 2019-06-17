@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains crm_theme_routes.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function crm_theme_routes_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the crm_theme_routes module.
+    case 'help.page.crm_theme_routes':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom theme routes') . '</p>';
+      return $output;
+
+    default:
+  }
+}

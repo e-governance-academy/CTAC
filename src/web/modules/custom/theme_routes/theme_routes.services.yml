@@ -1,0 +1,5 @@
+services:
+  theme.negotiator.crm_theme_routes:
+    class: Drupal\theme_routes\Theme\ThemeNegotiator
+    tags:
+    - { name: theme_negotiator, priority: 0 }
