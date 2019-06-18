@@ -31,7 +31,7 @@ The platform has fourmain functionalities accessible by pressing buttons: **“L
 
 [Working instance of CTACi Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
 
-## STAC installation and adjustment to the use in new county or area
+## STAC installation and adjustment to the use in new country or area
 
 See instructions in [https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
 
