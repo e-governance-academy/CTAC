@@ -2,89 +2,52 @@
 Community Tools Against Corruption
 ## About the repository 
 
-This repository contains information about the Community Tools Against Corruption (CTAC)Documentation and source codes.
+This repository contains information about the Community Tools Against Corruption (CTAC) Documentation and source codes.
 
 ## CTAC source code
 
-[Source code](https://github.com/e-governance-academy/CTAC/tree/master/src) of X-Road is open for all and it is licenced under EUPL licence.
+[Source code](https://github.com/e-governance-academy/CTAC/tree/master/src) of CTAC is open for all and it is licenced under EUPL licence.
 
 ## Introduction to CTAC
 
-Short [X-Road introduction video](https://youtu.be/9PaHinkJlvA)
+The problem of corruption is recognized as one of the biggest challenges in any country. It is also regarded as something abstract and distant from everyday lives of citizens, who do not relate to corruption and neither see it affecting their welfare and quality of life. One of the reasons is the limited awareness and understanding of its ramifications and effects. An effective call to action against corruption is based on the gradual education, raising awareness and mobilizing people in condemning corruption to a larger scale and extent.
 
-**What is X-Road?**
+The platform has following objectives:
+* **The educative objective:** The platform provide the general information about different forms of corruption and
+enable the citizens to advance their knowledge on corruption.
+* **The mobilizing objective:** The platform smobilize the online community who contribute to crowdsourcing descriptions
+of situations favorable for corruption.
+* **The advocating objective:** The platform provide the space for dissemination of advocacy activities.
+* **The community-building objective:** The platform enable a user to join the community of people interested in anticorruption
+activities and to receive the information related to this area.
+
+The platform has fourmain functionalities accessible by pressing buttons: **“LEARN”, “TEST“, “REPORT“, “BE INVOLVED“** (NB! the titles are subject to change). These press buttons should lead to the main modules of the platform, described below. In addition to this functionalities, the homepage should display:
+*	newsfeed and news archive about advocacy activities;
+*	project- and platform-related information with logos of partners (eGA and CPR) and funding institutions (OSI and MFA of Estonia);
+*	brief statistics on reporting visualized graphically;
+*	the links to social media of CPR (FB, twitter etc);
+*	contacts of CPR;
+*	CPR newsletter subscribe box
+
+[Working insance of CTACi Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
+
+## STAC installation and adjustment to the use in new county or area
+
+See instructions in [doc/12.04.2019 - CPR Anticorruption Installation Guide.docx](doc/12.04.2019 - CPR Anticorruption Installation Guide.docx)
+
+## CTAC technical documentation
+
+[Vision of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx)
+[Architecture of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx)
+[Installation: https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
 
 
-
-## Development of X-Road
-
-X-Road development model and all the related documentation is published and
-maintained in the [X-Road Development](https://github.com/nordic-institute/X-Road-development/)
-GitHub repository.
-
-**How to contribute?**
-
-Submit a pull request to [X-Road source code Github repository](https://github.com/nordic-institute/X-Road)
-or an enhancement request to the [X-Road Service Desk](https://jira.niis.org/servicedesk/customer/portal/1).
-[Sign up](https://jira.niis.org/secure/Signup!default.jspa) for an account and
-get access to the [X-Road Service Desk](https://jira.niis.org/servicedesk/customer/portal/1) and
-[X-Road Backlog](https://jira.niis.org/projects/XRDDEV/).
-
-More information about contributions can be found in the [X-Road Development](https://github.com/nordic-institute/X-Road-development#how-to-contribute)
-repository.
-
-## X-Road installation
-
-**How to build X-Road?**
-
-See instructions in [src/BUILD.md](src/BUILD.md)
-
-**Local installation**
-
-X-Road central servers, configuration proxies and security servers can be automatically installed with the Ansible scripts found in ansible subdirectory. See instructions in [ansible/README.md](ansible/README.md)
-
-## X-Road technical documentation
-
-[Documentation table of contents](doc/README.md)
-
-## Further information about X-Road
-
-**More information about X-Road implementations**
-
-Estonia - [X-tee](https://www.ria.ee/en/x-road.html)
-
-Finland - [Suomi.fi-palveluväylä (in Finnish)](https://esuomi.fi/palveluntarjoajille/palveluvayla/)
 
 **Contact information**
 
-Estonia - [X-tee contacts](https://www.ria.ee/en/contact.html)
+Estonia - [STAC contacts](https://www.ega.ee)
 
-Finland - [Suomi.fi-palveluväylä contacts](https://esuomi.fi/contact-information/?lang=en)
+Moldova - cprmoldova@gmail.com
 
-## Support disclaimer
 
-The following activities, among others, are undertaken by the
-[Nordic Institute for Interoperability Solutions (NIIS)](https://www.niis.org/)
-with regard to the X-Road core:
 
-* management, development, verification, and audit of the source code
-* administration of documentation
-* administration of business and technical requirements
-* conducting development
-* developing and implementing principles of licensing and distribution
-* providing second-line support for the NIIS members
-* international cooperation.
-
-Support for member organizations of X-tee and Suomi.fi-palveluväylä is provided
-by [RIA](https://www.ria.ee) (X-tee) and [VRK](https://www.vrk.fi) (Suomi.fi-palveluväylä).
-
-Consultation services for deploying independent X-Road instances should be obtained from enterprises with such services. Known organizations are:
-
-* [Aktors OÜ](http://www.aktors.ee)
-* [Cybernetica AS](https://cyber.ee)
-* [Gofore Oyj](https://www.gofore.com)
-* [Opin Kerfi](https://opinkerfi.is/en/)
-* [Planetway Corp.](https://planetway.com/en/)
-* [Roksnet Solutions OÜ](https://roksnet.com)
-
-No support for X-Road deployment is provided here.
