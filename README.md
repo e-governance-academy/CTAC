@@ -2,31 +2,19 @@
 Community Tools Against Corruption
 ## About the repository 
 
-This repository contains information about the Community Tools Against CorruptionX-Road, source codes, its development, installation and documentation.
+This repository contains information about the Community Tools Against Corruption (CTAC)Documentation and source codes.
 
-## X-Road source code
+## CTAC source code
 
-[Source code](https://github.com/nordic-institute/X-Road/tree/develop/src) of X-Road is open for all and it is licenced under MIT licence.
+[Source code](https://github.com/e-governance-academy/CTAC/tree/master/src) of X-Road is open for all and it is licenced under EUPL licence.
 
-## Introduction to X-Road
+## Introduction to CTAC
 
 Short [X-Road introduction video](https://youtu.be/9PaHinkJlvA)
 
 **What is X-Road?**
 
-X-Road, the data exchange layer for information systems, is a technological and organizational environment enabling a secure Internet-based data exchange between information systems.
 
-![X-Road overview](X-Road_overview.png)
-
-X-Road Data Exchange Layer is a standardised, cohesive, collaborative, interoperable and secure data exchange layer that gives service providers a completely new kind of opportunity of making themselves visible in services directed at citizens, businesses and civil servants. Creating entities that combine many different services and data sources is easy and cost efficient.
-
-* Improves the quality of existing services and products
-* Enables new types of service innovations
-* Savings in infrastructure, archiving and other costs
-* Standardised data security and privacy protection
-* Easy implementation, data access via interfaces – after connecting all included services are available
-
-See [Data Exchange Layer X-Road](https://www.niis.org/data-exchange-layer-x-road/) for more information about X-Road.
 
 ## Development of X-Road
 
