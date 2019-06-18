@@ -45,7 +45,7 @@ See instructions in [https://github.com/e-governance-academy/CTAC/blob/master/do
 
 **Contact information**
 
-Estonia - [STAC contacts](https://www.ega.ee)
+Estonia - [eGA website](https://www.ega.ee), Kristina Reinsalu <kristina.reinsalu@ega.ee> 
 
 Moldova - cprmoldova@gmail.com
 
