@@ -2,7 +2,7 @@
 Community Tools Against Corruption
 ## About the repository 
 
-This repository contains information about the Community Tools Against Corruption (CTAC) Documentation and source codes.
+This repository contains information about the Community Tools Against Corruption (CTAC): documentation and source codes.
 
 ## CTAC source code
 
@@ -29,17 +29,17 @@ The platform has fourmain functionalities accessible by pressing buttons: **“L
 *	contacts of CPR;
 *	CPR newsletter subscribe box
 
-[Working insance of CTACi Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
+[Working instance of CTACi Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
 
 ## STAC installation and adjustment to the use in new county or area
 
-See instructions in [doc/12.04.2019 - CPR Anticorruption Installation Guide.docx](doc/12.04.2019 - CPR Anticorruption Installation Guide.docx)
+See instructions in [https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
 
 ## CTAC technical documentation
 
-[Vision of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx)
-[Architecture of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx)
-[Installation: https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
+* [Vision of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx)
+* [Architecture of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx)
+* [Installation: https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
 
 
 
