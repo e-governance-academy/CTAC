@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
 function cpr_extension_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $current_user = \Drupal::currentUser();
 
-  if (($form_id == 'node_be_involved_form') && ($current_user->isAnonymous())) {
+  if (($form_id == 'node_be_involved_form')) {
     $form['#title'] = t('Be Involved');
     unset($form['revision']);
     unset($form['revision_log']);

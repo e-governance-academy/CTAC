@@ -158,3 +158,12 @@ function cpr_bootstrap_barrio_preprocess_node(&$vars) {
 function cpr_bootstrap_barrio_preprocess_taxonomy_term(&$vars) {
   $vars['language'] = get_current_language();
 }
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function cpr_bootstrap_barrio_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'views_exposed_form') {
+    $form['actions']['submit']['#attributes']['class'][] = 'btn--to-dark';
+  }
+}
