@@ -21,13 +21,13 @@ of situations favorable for corruption.
 * **The community-building objective:** The platform enable a user to join the community of people interested in anticorruption
 activities and to receive the information related to this area.
 
-The platform has fourmain functionalities accessible by pressing buttons: **“LEARN”, “TEST“, “REPORT“, “BE INVOLVED“** (NB! the titles are subject to change). These press buttons should lead to the main modules of the platform, described below. In addition to this functionalities, the homepage should display:
+The platform has four main functionalities accessible by pressing buttons: **“LEARN”, “TEST“, “REPORT“, “BE INVOLVED“** (NB! the titles are subject to change). These press buttons lead to the main modules of the platform. In additional functionalities:
 *	newsfeed and news archive about advocacy activities;
-*	project- and platform-related information with logos of partners (eGA and CPR) and funding institutions (OSI and MFA of Estonia);
+*	project- and platform-related information with logos of partners and funding institutions;
 *	brief statistics on reporting visualized graphically;
-*	the links to social media of CPR (FB, twitter etc);
-*	contacts of CPR;
-*	CPR newsletter subscribe box
+*	the links to social media;
+*	contacts of concrete instance;
+*	newsletter subscribe box
 
 [Working instance of CTAC Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
 
