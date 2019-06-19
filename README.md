@@ -29,7 +29,7 @@ The platform has fourmain functionalities accessible by pressing buttons: **“L
 *	contacts of CPR;
 *	CPR newsletter subscribe box
 
-[Working instance of CTACi Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
+[Working instance of CTAC Moldova: https://faracoruptie.md/](https://faracoruptie.md/)
 
 ## STAC installation and adjustment to the use in new country or area
 
