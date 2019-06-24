@@ -39,7 +39,7 @@ See instructions in [https://github.com/e-governance-academy/CTAC/blob/master/do
 
 * [Vision of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Vision-and-reqirements.docx)
 * [Architecture of CTAC: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Architecture.docx)
-* [Installation: https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx](https://github.com/e-governance-academy/CTAC/blob/master/doc/12.04.2019%20-%20CPR%20Anticorruption%20Installation%20Guide.docx)
+* [Installation: https://github.com/e-governance-academy/CTAC/blob/master/doc/CTAC-Installation-Guide.docx
 
 
 
